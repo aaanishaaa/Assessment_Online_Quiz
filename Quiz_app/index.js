@@ -25,30 +25,30 @@ const questions = [
         answer: "South Korea"
       },
   ];
-  let currentQuestionIndex = 0;
+  let current_score = 0;
   let score = 0;
   window.onload = loadQuestion;
   function loadQuestion() {
-    const question = questions[currentQuestionIndex];
+    const question = questions[current_score];
     document.querySelector(".quiz-heading").innerText = question.question;
-    const choicesList = document.querySelectorAll(".quiz-choice input");
+    const choice_list = document.querySelectorAll(".quiz-choice input");
     const labels = document.querySelectorAll(".quiz-choice label");
   
-    choicesList.forEach((choice, index) => {
+    choice_list.forEach((choice, index) => {
       choice.checked = false; 
       choice.value = question.choices[index];
       labels[index].innerText = question.choices[index];
     });
   }
   function prev() {
-    if (currentQuestionIndex > 0) {
-      currentQuestionIndex--;
+    if (current_score > 0) {
+      current_score--;
       loadQuestion();
     }
   }
   function next() {
-    if (currentQuestionIndex < questions.length - 1) {
-      currentQuestionIndex++;
+    if (current_score < questions.length - 1) {
+      current_score++;
       loadQuestion();
     }
   }
@@ -57,7 +57,7 @@ const questions = [
   
     if (selectedChoice) {
       const userAnswer = selectedChoice.value;
-      const correctAnswer = questions[currentQuestionIndex].answer;
+      const correctAnswer = questions[current_score].answer;
   
       if (userAnswer === correctAnswer) {
         score++;
