@@ -2,6 +2,8 @@
 
 An interactive online quiz application built with HTML, CSS, and JavaScript. Test your knowledge in various topics, including Geography, Politics, and General Knowledge, with this engaging and easy-to-use quiz!
 
+**visit the live link: https://assessment-online-quiz-jpj9.vercel.app/**
+
 ## Features
 
 - **Multiple-Choice Questions**: Each question provides several answer options, allowing users to select their answer.
