@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.head{
+    margin-top: 4%;
+    background-color: blanchedalmond;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+.quiz{
+    margin: 25px;
+    max-width: 25%;
+    border-radius: 3px;
+    padding: 30px;
+}
+.quiz-heading{
+    padding: 25px;
+}
+.quiz-content{
+    padding-left: 25px;
+}
+
+.quiz-choice{
+    display: flex;
+}
+
+button{
+    margin-top: 20px;
+    font-size: 17px;
+    padding: 15px;
+    color: aliceblue;
+    border-radius: 3px;
+    border: 0cap;
+}
+#submit{
+    background-color: red;
+}
+#next{
+    background-color: rgb(0, 172, 0);
+}
+#prev{
+    background-color: rgb(0, 60, 255);
+}
