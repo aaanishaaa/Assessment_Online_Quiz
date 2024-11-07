@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="head">
-            Online Quiz
-        </div>
-        <div class="quiz">
-        <div class="quiz-heading">
-            What is the capital of France?
-        </div>
-        <div class="quiz-content">
-            <form class="quiz-choice">
-                <input type="radio" id="ch1"> <label for="text">Berlin</label>
-                <input type="radio" id="ch2"> <label for="text">Madrid</label>
-                <input type="radio" id="ch3" value="ans"> <label for="text">Paris</label>
-                <input type="radio" id="ch4"> <label for="text">Rome</label>
-            </form>
-            <button onclick="" id="prev">Previous</button>
-            <button onclick="" id="next">Next</button>
-            <button onclick="" id="submit">Submit</button>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="head">Online Quiz</div>
+    <div class="quiz">
+      <!-- Text for Quiz Heading -->
+      <div class="quiz-heading">What is the capital of France?</div>
+      <div class="quiz-content">
+        <form class="quiz-choice">
+          <ul style="list-style: none">
+            <li>
+              <input type="radio" class="ch1" />
+              <label for="text">Berlin</label>
+            </li>
+            <li>
+              <input type="radio" class="ch2" />
+              <label for="text">Madrid</label>
+            </li>
+            <li>
+              <input type="radio" class="ch3" value="ans" />
+              <label for="text">Paris</label>
+            </li>
+            <li>
+              <input type="radio" class="ch4" />
+              <label for="text">Rome</label>
+            </li>
+          </ul>
+        </form>
+        <!-- Button Section -->
+        <button onclick="prev()" id="prev">Previous</button>
+        <button onclick="next()" id="next">Next</button>
+        <button onclick="submit()" id="submit">Submit</button>
+      </div>
     </div>
-        <script src="index.js" async defer></script>
-    </body>
+    <script src="index.js" async defer></script>
+  </body>
 </html>

@@ -13,10 +13,11 @@ body{
     display: flex;
     justify-content: center;
     color: blue;
+    box-shadow: 20px;
 }
 .quiz{
     margin: 25px;
-    max-width: 25%;
+    max-width: 50%;
     border-radius: 3px;
     padding: 30px;
 }
